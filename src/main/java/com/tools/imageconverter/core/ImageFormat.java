@@ -6,6 +6,7 @@ public enum ImageFormat {
     JPEG,
     GIF,
     TIFF,
+    WEBP,
     UNKNOWN;
 
     public static ImageFormat fromExtension(String extension) {
@@ -18,6 +19,7 @@ public enum ImageFormat {
             case "gif": return GIF;
             case "tiff":
             case "tif": return TIFF;
+            case "webp": return WEBP;
             default: return UNKNOWN;
         }
     }
